@@ -1,0 +1,579 @@
+@charset "utf-8";
+
+/* BODY */
+*{
+	margin: 0%;
+	padding: 0%;
+}
+
+header, nav, div, aside, section, footer {
+	display: block;
+}
+
+body {
+	align-content: center;
+	background-color: #DDDDDD;
+	color: #333333;
+	
+	font: normal normal normal 17.5 Aller;
+}
+
+a:visited {
+	color: #666666;
+	font-family: Aller;
+}
+
+#titleLB {
+	cursor: default;
+	
+	float: right;
+	font: 25px Aller;
+	color: #333333;
+    padding: 1%;
+}
+
+#pageTitle {
+	cursor: default;
+	
+	font: 25px Aller;
+	color: #333333;
+	text-align: right;
+	
+	margin: 1.5% 2.5%;
+}
+
+/* HEADER */
+#mainHeader {
+	background-color: #333333;
+	margin: auto;
+	padding: 0.25% 0%;
+	font-family: Aller;
+
+	height: 100px;
+	width: 70%;
+}
+
+#logos img {
+	padding-right: 1%;
+}
+
+#headerLinksSr {
+	float: right;
+	text-align: right;
+	font-family: Aller;
+	
+	margin: 0.25% 1% 1% 0.25%;
+	width: 30%;
+}
+
+#headerLinksSr input[type=text] {
+    background-color: transparent;
+	color: #DDDDDD;
+	font: 17px Aller;
+	border: 3px solid #DDDDDD;
+	border-style: none;
+
+	padding: 1.5% 5% 1.5% 12.5%;
+    box-sizing: border-box;
+
+    background-image: url('../images/Icons/searchDef.png');
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+	background-size: contain;
+
+	-webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+
+	width: 0%;
+}
+
+#headerLinksSr input[type=text]:hover, #headerLinksSr input[type=text]:active {
+    background-image: url('../images/Icons/searchHov.png');
+    background-color: #DDDDDD;
+	color: #999999;
+	opacity: 50%;
+	border-radius: 5px;
+
+    width: 100%;
+}
+
+#userDetails {
+	float: right;
+	color: #FFFFFF;
+	text-align: right;
+	font: 17px Aller;
+	
+	margin: 1.25% 0.5% 1% 0.25%;
+	padding: 0.5%;
+	width: 40%;
+}
+
+#userDetails a {
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	color: #DDDDDD;	
+}
+
+#userDetails a:hover, #userDetails a:active {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+#headerLinks {
+	clear: right;
+	float: right;
+	color: #FFFFFF;
+	text-align: right;
+	
+	margin: 1% 1% 1% 0.25%;
+	width: 17.5%;
+}
+
+#headerLinks input[type=submit] {
+	cursor: pointer;
+	border: none;
+	
+	text-align: center;
+	background-color: #333333;
+	color: #FFFFFF;
+	font-family: Aller;
+	font-size: 17px;
+	
+	padding: 2.5%;
+	width: 95%;
+}
+
+#headerLinks input[type=submit]:hover, #headerLinks input[type=submit]:active {
+	color: #DDDDDD;
+	background-color: #222222;
+	font-size: 18px;
+	
+	border-radius: 5px;
+}
+
+/* MAIN NAVIGATION */
+#mainNav {
+	box-shadow: 5px 0px 10px 1px #333333;
+	
+	background-color: #666666;
+	font-family: Aller;
+	
+	margin: 0% auto 0.25% auto;
+	width: 70%;
+}
+
+#mainNav a {
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	color: #FFFFFF;
+	font-size: 15px;
+	
+	padding: 2.5%;
+	width: 95%;
+}
+
+#mainNav a:hover {
+	color: #DDDDDD;
+	background-color: #333333;
+	font-size: 14px;
+}
+
+/* SEARCH RESULTS */
+#searchResultsSection {
+	box-shadow: 5px 2.5px 10px 1px #333333;
+	
+	font-family: Aller;
+	
+	padding: 0.25% 0%;
+	margin: auto;
+	width: 70%;
+}
+
+#searchResultsTitle {
+	cursor: default;
+	
+	font-size: 20px;
+	color: #333333;
+	
+	margin: 0.5% 1.5% 0% 1.5%;
+    padding: 1%;
+	width: 95%;
+}
+
+#filterSearch {
+	float: left;
+	
+	margin: 0.5% 1%;
+	width: 100%;
+}
+
+#filterSearch p {
+	cursor: default;
+	
+	float: left;
+	font-size: 20px;
+	font-style: italic;
+	
+	margin: 1.25% 1% 0% 1%;
+}
+
+#filterSearch select, #filterSearch input[type=text] {
+	float: left;
+	
+	font: 17.5px Aller;
+	color: #333333;
+	background-color: #DDDDDD;
+	
+	border-radius: 5px;
+	
+	margin: 0.5% 1.5%;
+	padding: 0.5% 1.5%;
+}
+
+#filterSearch input[type=text] {
+	border-radius: 0px;
+	border-style: none;
+	border-bottom: 2px solid #333333;
+}
+
+#filterSearch input[type=submit] {
+	background-color: #333333;
+	color: #DDDDDD;
+	
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 15px;
+	
+	margin: 0.5% 1.5%;
+	padding: 0.5% 1.5%;
+	width: 10%;
+}
+
+#filterSearch input[type=submit]:hover, #filterSearch input[type=submit]:active {
+	background-color: #666666;
+	color: #FFFFFF;
+	border-radius: 0px;
+}
+
+/* HOME */
+#newsSection {
+	box-shadow: 5px 2.5px 10px 1px #333333;
+	
+	font-family: Aller;
+	
+	padding: 0%;
+	margin:auto;
+	width: 70%;
+}
+
+#recentUploadsSection {
+	text-align: center;
+	clear: both;
+	
+	margin: 1.5% auto;
+	width: 100%;
+}
+
+/* ABOUT US */
+
+/* COURSES */
+
+/* MESSAGES */
+
+/* HELP */
+
+/* TERMS AND AGREEMENT */
+
+/*  */
+
+/* CONTACT US, FORGOT PASSWORD, SIGN IN */
+#mainSection {
+	box-shadow: 5px 2.5px 10px 1px #333333;
+	
+	color: #333333;
+	font-family: Aller;
+	
+	margin: auto;
+	width: 70%;
+}
+
+#mainSectionContainer {
+	float: right;
+	font: 15px Aller;
+	
+	padding: 0.75% 2.5%;
+	width: 40%;
+}
+
+#mainSectionContainerWide {
+	font-family: Aller;
+	padding: 0.75% 2.5%;
+	width: 95%;
+}
+
+#csfMessageDiv {
+	font-size: 20px;
+	color: #FF0000;
+	text-align: center;
+	
+	margin: 0% 1.5%;
+	padding: 0.5% 2.5%;
+}
+
+#mainSection h2 {
+	font-size: 17.5px;
+	
+	margin: 0.5% 1.5%;
+	padding: 1% 1.5%;
+}
+
+#mainSection input[type=text], #mainSection input[type=email], #mainSection input[type=password], #mainSection input[type=number], #mainSection input[type=file], #mainSection textarea, #mainSection select {
+	font-size: 15px;
+	color: #333333;
+	background-color: #DDDDDD;
+	
+	border-style: none;
+	border: 1px solid #333333;
+	
+	margin: 0.5% 1.5%;
+	padding: 2.5%;
+	width: 95%;
+}
+
+#mainSection textarea {
+	font: 17px Aller;
+	padding: 1.5% 2%;
+}
+
+#mainSection input[type=text]:focus, #mainSection input[type=email]:focus, #mainSection textarea:focus, #mainSection input[type=number]:focus, #mainSection select:focus, #mainSection input[type=password]:focus, #mainSection input[type=file]:focus {
+	color: #DDDDDD;
+	background-color: #333333;
+	
+	border-color: #333333;
+	border-radius: 5px;
+}
+
+#mainSection input[type=submit], #mainSection input[type=reset] {
+	background-color: #333333;
+	color: #DDDDDD;
+	float: right;
+	
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 15px;
+	
+	margin: 2.5% 3.25%;
+	padding: 2.5%;
+	width: 42.5%;
+}
+
+#mainSection input[type=submit]:hover, #mainSection input[type=reset]:hover {
+	background-color: #666666;
+	color: #FFFFFF;
+	border-radius: 0px;
+}
+
+#mainSectionOL {
+	clear: both;
+	float: right;
+	text-decoration: none;
+	color: #333333;
+	background-color: #DDDDDD;
+	font-size: 20px;
+	
+	margin: 2% 1.5%;
+	padding: 0% 2%;
+}
+
+#mainSectionOL:hover, #mainSectionOL:active {
+	text-decoration: underline;
+	color: #000000;
+}
+
+#tableOfContent {
+	border: 1px solid #333333;
+	background-color: #CCCCCC;
+	
+	padding: 1%;
+	margin: 1.5% 2%;
+	width: 50%;
+}
+
+#tableOfContent li {
+	font-size: 17px;
+	margin: 2.5% 12.5%;
+}
+
+#tableOfContent a {
+	text-decoration: none;
+	color: #3535FF;
+	padding-left: 2.5%;
+}
+
+#tableOfContent a:hover, #tableOfContent a:active {
+	font-style: italic;
+	text-decoration: underline;
+	color: #333333;
+}
+
+#articleDiv {
+	border-bottom: 1px solid #333333;
+	clear: both;
+	
+	text-align: justify;
+	
+	margin: 0.5% 2%;
+}
+
+#articleDiv h2 {
+	cursor: default;
+	
+	font: 27.5px Aller;
+	
+	margin: 0% 0.5%;
+}
+
+#article {
+	font: 16.5px Aller;
+	text-align: justify;
+	
+	margin: 0.5% 0%;
+	padding: 1% 1%;
+	width: 98%;
+}
+
+#articleDiv h3 {
+	cursor: default;
+	
+	font: 22.5px Aller;
+	
+	margin: 0% 7.5%;
+}
+
+#subarticle {
+	clear: both;
+	font: 16.5px Aller;
+	
+	margin: 1% 5%;
+	padding: 1% 1%;
+	width: 88%;
+}
+
+#articleDiv li {
+	font: 16.5px Aller;
+	
+	margin: 0.5% 5%;
+	padding: 1% 0.5%;
+}
+
+#articleDiv a {
+	font: 16.5px Aller;
+	text-decoration: none;
+	color: #3535FF;
+}
+
+#articleDiv a:hover, #articleDiv a:active {
+	text-decoration: underline;
+	font-style: italic;
+	color: #000000;
+}
+
+/* USER PAGE */
+#pageTitle a{
+	text-decoration: none;
+	font-size: 20px;
+	float: right;
+	color: #333333;
+}
+
+#pageTitle a:hover {
+	text-decoration: underline;
+	font-style: italic;
+	color: #000000;	
+}
+
+#userPageContent {
+	color: #333333;
+	float: left;
+	
+	padding: 1% 2.5%;
+	margin: 1%;
+	width: 40%;
+}
+
+#userPageContent p {
+	font-size: 25px;
+	padding: 0% 1.5%;
+}
+
+#userTask {
+	float: left;
+	
+	text-align: center;
+	
+	margin: 1%;
+	padding: 1%;
+	width: 16%;
+}
+
+#userTask:hover {
+	box-shadow: 5px 5px 10px 1px #222222;
+	background-color: #BBBBBB;
+}
+
+#userTask img {
+	width: 75%;
+}
+
+#userTask a {
+	text-decoration: none;
+	font-size: 15px;
+	color: #222;
+}
+
+#userTask a:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+
+/* FOOTER */
+#mainFooter {
+	background-color: #333333;
+	margin: auto;
+    padding: 1%;
+	width: 98%;
+}
+
+#mainFooter a {
+	text-decoration: none;
+	color: #DDDDDD;
+	font-size: 15px;
+}
+
+#mainFooter a:hover, #mainFoot a:active {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
